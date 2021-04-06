@@ -1,97 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bootstrap Example</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <style>
+.container-fluid{
+  background-color: rgb(39, 0, 75);
+  padding-bottom: 100px;
+}
+
+.text-light{
+  font-size: 25px; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+ 
+ .navbar-brand{
+   padding-left: 160px;
+   padding-top: 20px;
+ }
+
+ 
+  button{
+    margin-left: 10px;
+    
+  } 
+
+.container{
+  padding-left: 150px;
+  padding-top: 150px;
+}
+
+
+
+#content{
+  padding-top: 10px;
+}
+img{
+  float: left;
+  clear: left;
+}
+ #content p{ 
+   margin-left: 10px;
+ }
+  </style>
 </head>
 <body>
-
-<div class="container">
-  <h2>Colored Spinners</h2>
-  <p>Use any <strong>text color utilites</strong> to add a color to the spinner:</p>
-                                        
-  <div class="spinner-border text-muted"></div>
-  <div class="spinner-border text-primary"></div>
-  <div class="spinner-border text-success"></div>
-  <div class="spinner-border text-info"></div>
-  <div class="spinner-border text-warning"></div>
-  <div class="spinner-border text-danger"></div>
-  <div class="spinner-border text-secondary"></div>
-  <div class="spinner-border text-dark"></div>
-  <div class="spinner-border text-light"></div>
-</div>
-
-
-
-<div class="container-fluid">
-	<h2>Growing Spinners</h2>
-	<p>Use the <code>.spinner-grow</code> class if you want the spinner/loader to grow instead of "spin":</p>
-										  
-	<div class="spinner-grow text-muted"></div>
-	<div class="spinner-grow text-primary"></div>
-	<div class="spinner-grow text-success"></div>
-	<div class="spinner-grow text-info"></div>
-	<div class="spinner-grow text-warning"></div>
-	<div class="spinner-grow text-danger"></div>
-	<div class="spinner-grow text-secondary"></div>
-	<div class="spinner-grow text-dark"></div>
-	<div class="spinner-grow text-light"></div>
-  </div>
-
-  <div class="container">
-	<h2>Spinner Buttons</h2>
-	<p>Add spinners to buttons:</p>
-										  
-	<button class="btn btn-primary">
-	  <span class="spinner-border spinner-border-sm"></span>
-	</button>
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-md  navbar-dark">
+            <h1 class="navbar-brand" ><strong><span class="bg-danger">ini</span> ikizamini </strong></h1>
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                 <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="collapse navbar-collapse show justify-content-end" id="collapsibleNavbar">
+                   <button class="btn btn-primary"> <i class='fas fa-user-plus'></i> Iyandikishe</button>
+                   <button  class="btn btn-primary"><i class='fas fa-sign-in-alt'></i> Injira</button>
+                   <div class="dropdown">
+                     <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                       <i class='fas fa-globe-africa'></i> Kinyarwanda
+                     </button>
+                     <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">Swahili</a>
+                          <a class="dropdown-item" href="#">English</a>
+                     </div>
+                 </div>
+             </nav>
+         <div id="demoleft" class="container">
+                <p class="text-light"><strong>Ikaze!Kwitegura ibizamini <br> byorohejwe bidasanzwe.</strong> </p>
+                <button type="button" class="btn btn-primary">Fungura konti</button>
+            </div>
+            </div>
+            <div id="content" class="container">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsaHU8TF4AhoPjRyiHLqWapAjUVWNT0M043g&usqp=CAU" alt="video image" style="width: 100px;" height="70px">
+              <h2 >Tugutegura gukora ibizamin</h2>
+              <p> Uru rubuga rufite imyitozo itandukanye igufasha kwitegura ibizamini <br>
+                  bikenerwa nk'uruhushya rw'agateganyo rwo gutwara.
+              </p>
+              <hr>
+            </div>
   
-	<button class="btn btn-primary">
-	  <span class="spinner-border spinner-border-sm"></span>
-	  Loading..
-	</button>
-	
-	<button class="btn btn-primary" disabled>
-	  <span class="spinner-border spinner-border-sm"></span>
-	  Loading..
-	</button>
-	
-	<button class="btn btn-primary" disabled>
-	  <span class="spinner-grow spinner-grow-sm"></span>
-	  Loading..
-	</button>
-  </div>
-
-<div class="container">
-  <h2>Pagination</h2>
-  <p>To create a basic pagination, add the .pagination class to an ul element. Then add the .page-item to each li element and a .page-link class to each link inside li:</p>                  
-  <ul class="pagination">
-    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
-</div>
-<div class="container">
-	<h2>List Group With Linked Items</h2>
-	<div class="list-group">
-	  <a href="#" class="list-group-item list-group-item-action">First item</a>
-	  <a href="#" class="list-group-item list-group-item-action">Second item</a>
-	  <a href="#" class="list-group-item list-group-item-action">Third item</a>
-	</div>
-  </div>
-<div class="d-flex">
-<div><button class="btn btn-primary btn-space"><a href="#">1</a>button</button></div>
-<div><button class="btn btn-primary"><a href="#">2</a>button 2</button></div>
-<div><button class="btn btn-primary"><a href="#">3</a>button 3</button></div>
-
-</div>	  
-
 </body>
 </html>
 
